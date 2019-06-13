@@ -52,7 +52,6 @@ class HrHolidaysPublicLine(models.Model):
                 line_date=old_date)
             self.env['employee.attendance.analytic'].recalculate_line(
                 line_date=new_date)
-
         return res
 
     @api.multi
