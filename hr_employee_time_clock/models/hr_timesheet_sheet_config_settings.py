@@ -21,7 +21,16 @@
 ##############################################################################
 
 
-from . import controllers
-from . import models
-from . import wizard
-from . import report
+from odoo import fields, models
+
+
+class HrTimesheetConfiguration(models.TransientModel):
+    _inherit = 'project.config.settings'
+
+    module_project_timesheet_synchro = fields.Boolean(
+        string="Timesheet app for Chrome/Android/iOS")
+    timesheet_range = fields.Selection(related='company_id.timesheet_range',
+                                       string="Timesheet range *")
+    timesheet_max_difference = fields.Float(
+        related='company_id.timesheet_max_difference',
+        string="Timesheet allowed difference(Hours) *")

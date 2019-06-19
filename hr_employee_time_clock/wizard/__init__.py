@@ -2,8 +2,8 @@
 
 ##############################################################################
 #
-#    OpenERP, Open Source Management Solution
-#    Copyright (C) 2016 - now Bytebrand Outsourcing AG (<http://www.bytebrand.net>).
+#    Clear Groups for Odoo
+#    Copyright (C) 2016 Bytebrand GmbH (<http://www.bytebrand.net>).
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Lesser General Public License as
@@ -20,8 +20,9 @@
 #
 ##############################################################################
 
+from . import hr_timesheet_current
+from . import create_timesheet_with_tag
+from . import import_leave_requests
 
-from . import controllers
-from . import models
-from . import wizard
-from . import report
+
+# END
