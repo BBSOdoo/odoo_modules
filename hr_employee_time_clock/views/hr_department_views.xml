@@ -12,7 +12,7 @@
                 <xpath expr="//templates" position="before">
                     <field name="timesheet_to_approve_count"/>
                 </xpath>
-                <xpath expr="//div[hasclass('col-6 o_kanban_primary_right')]"
+                <xpath expr="//div[hasclass('o_kanban_primary_right')]"
                        position="inside">
 
                     <div t-if="record.timesheet_to_approve_count.raw_value > 0"
@@ -28,8 +28,7 @@
                         </div>
                     </div>
                 </xpath>
-
-                <xpath expr="//div[contains(@class, 'col-4 o_kanban_card_manage_section o_kanban_manage_to_approve')]"
+                <xpath expr="//div[hasclass('o_kanban_card_manage_section')]"
                        position="inside">
                     <div class="row">
                         <div class="col-12 text-left">
