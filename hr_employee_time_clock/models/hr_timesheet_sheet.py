@@ -205,7 +205,7 @@ class HrTimesheetSheet(models.Model):
     period_ids = fields.One2many('employee.attendance.analytic', 'sheet_id',
                                  string='Period', readonly=True)
     attendance_count = fields.Integer(compute='_compute_attendances',
-                                      string="Attendances")
+                                      string="Attendances Count")
 
     total_duty_hours = fields.Float(compute='_duty_hours',
                                     string='Total Duty Hours',

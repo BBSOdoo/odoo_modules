@@ -258,7 +258,7 @@ class ResourceCalendar(models.Model):
 class ResourceCalendarAttendanceOvertime(models.Model):
     _name = "resource.calendar.attendance.overtime"
     _order = 'dayofweek, hour_from'
-    _description = ''
+    _description = 'ResourceCalendarAttendanceOvertime'
 
     name = fields.Char(required=True)
     dayofweek = fields.Selection([('0', 'Monday'),
