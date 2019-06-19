@@ -37,7 +37,7 @@
                 'hr_contract',
                 'hr_holidays',
                 'project',
-                # 'hr_holidays_public'
+                'hr_holidays_public'
                 ],
     'images': ['images/overundertime.png'],
     'installable': True,
