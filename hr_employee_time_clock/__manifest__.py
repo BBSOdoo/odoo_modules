@@ -29,7 +29,6 @@
     'version': '12.0.3.0.0',
     'depends': ['mail',
                 'analytic',
-                'analytic_account',
                 'hr_timesheet',
                 'hr_attendance',
                 'hr',
