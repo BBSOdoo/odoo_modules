@@ -45,7 +45,6 @@
         'data/hr_timesheet_sheet_data.xml',
 
         'views/hr_timesheet_sheet_views.xml',
-
         'views/hr_attendance_subtypes.xml',
         'views/hr_holidays_views.xml',
         'views/hr_department_views.xml',
