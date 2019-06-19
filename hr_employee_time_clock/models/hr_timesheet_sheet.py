@@ -210,7 +210,7 @@ class HrTimesheetSheet(models.Model):
     total_duty_hours = fields.Float(compute='_duty_hours',
                                     string='Total Duty Hours',
                                     multi="_duty_hours")
-    total_duty_hours_done = fields.Float(string='Total Duty Hours',
+    total_duty_hours_done = fields.Float(string='Total Duty Hours Done',
                                          readonly=True,
                                          default=0.0)
     total_diff_hours = fields.Float(string='Total Diff Hours',

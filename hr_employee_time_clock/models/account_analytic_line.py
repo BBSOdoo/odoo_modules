@@ -27,6 +27,7 @@ from odoo.exceptions import UserError
 
 class AccountAnalyticLine(models.Model):
     _inherit = "account.analytic.line"
+    _description = ''
 
     @api.depends('date', 'user_id', 'sheet_id_computed.date_to',
                  'sheet_id_computed.date_from', 'sheet_id_computed.employee_id')
@@ -48,7 +49,7 @@ class AccountAnalyticLine(models.Model):
                 ts_line.sheet_id = sheets[0]
 
     sheet_id_computed = fields.Many2one('hr_timesheet_sheet.sheet',
-                                        string='Sheet',
+                                        string='Compute Sheet',
                                         compute='_compute_sheet',
                                         index=True,
                                         ondelete='cascade',
