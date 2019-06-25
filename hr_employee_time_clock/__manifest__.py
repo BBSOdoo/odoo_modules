@@ -35,9 +35,8 @@
                 'hr_attendance',
                 'hr',
                 'hr_contract',
-                # 'project',
                 'hr_holidays',
-                'hr_holidays_public',
+                # 'hr_holidays_public',
 
                 ],
     'images': ['images/overundertime.png'],
