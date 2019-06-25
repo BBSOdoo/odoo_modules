@@ -35,36 +35,37 @@
                 'hr_attendance',
                 'hr',
                 'hr_contract',
-                'project',
-                'hr_holidays_public',
+                # 'project',
                 'hr_holidays',
+                'hr_holidays_public',
+
                 ],
     'images': ['images/overundertime.png'],
     'installable': True,
     'data': [
-        # 'data/hr_timesheet_sheet_data.xml',
+        'data/hr_timesheet_sheet_data.xml',
 
-        # 'views/hr_timesheet_sheet_views.xml',
+        'views/hr_timesheet_sheet_views.xml',
 
-        # 'views/hr_attendance_subtypes.xml',
-        # 'views/hr_holidays_views.xml',
-        # 'views/hr_department_views.xml',
+        'views/hr_attendance_subtypes.xml',
+        'views/hr_holidays_views.xml',
+        'views/hr_department_views.xml',
 
         # Report
-        # 'report/report_attendance_analysis_view.xml',
+        'report/report_attendance_analysis_view.xml',
 
         'security/hr_timesheet_security.xml',
         'security/ir.model.access.csv',
 
         # View file for the wizard
-        # 'wizard/create_timesheet_with_tag_view.xml',
-        # 'wizard/import_leave_requests_view.xml',
+        'wizard/create_timesheet_with_tag_view.xml',
+        'wizard/import_leave_requests_view.xml',
 
         # Extension
-        # 'views/res_config_settings_views.xml',
-        # 'views/hr_employee_views.xml',
-        # 'views/hr_contract_views.xml',
-        # 'views/resource_calendar_view.xml',
+        'views/res_config_settings_views.xml',
+        'views/hr_employee_views.xml',
+        'views/hr_contract_views.xml',
+        'views/resource_calendar_view.xml',
     ],
     'qweb': ['static/src/xml/timesheet.xml', ],
 }
