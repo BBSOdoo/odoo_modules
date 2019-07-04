@@ -20,18 +20,17 @@
 #
 ##############################################################################
 
-from . import hr_timesheet_sheet
-from . import hr_attendance
-# from . import hr_holidays_public
-from . import employee_attendance_analytic
-from . import resource_calendar
-from . import hr_holidays
-from . import account_analytic_line
-from . import hr_department
-from . import hr_employee
-from . import hr_timesheet_sheet_day
-from . import hr_timesheet_sheet_account
-from . import res_company
-from . import hr_contract
-# from . import res_config_settings
-from . import res_users
+
+from odoo import fields, models
+
+
+class HrTimesheetConfiguration(models.TransientModel):
+    _inherit = 'project.config.settings'
+
+    module_project_timesheet_synchro = fields.Boolean(
+        string="Timesheet app for Chrome/Android/iOS")
+    timesheet_range = fields.Selection(related='company_id.timesheet_range',
+                                       string="Timesheet range *")
+    timesheet_max_difference = fields.Float(
+        related='company_id.timesheet_max_difference',
+        string="Timesheet allowed difference(Hours) *")
